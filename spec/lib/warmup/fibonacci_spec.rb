@@ -7,5 +7,6 @@ describe Fibonacci do
     it { expect(Fibonacci.new(4).find_num).to eq 3 }
     it { expect(Fibonacci.new(7).find_num).to eq 13 }
     it { expect(Fibonacci.new(10).find_num).to eq 55 }
+    it { expect{ Fibonacci.new(-1).find_num }.to raise_error }
   end
 end
